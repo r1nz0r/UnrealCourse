@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\XYZ_Course.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F9C3F168-0D74-4982-8402-F64DCFF072DF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\XYZ_Course.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\XYZ_CourseEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{68A83187-C1C6-455E-B41D-28FFFB92262E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\XYZ_Course">
+      <UniqueIdentifier>{0069DDEF-4E78-4F3D-A4A2-0F72364CD095}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\XYZ_Course\XYZ_Course.Build.cs">
+      <Filter>Source\XYZ_Course</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\XYZ_Course\XYZ_Course.cpp">
+      <Filter>Source\XYZ_Course</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\XYZ_Course\XYZ_Course.h">
+      <Filter>Source\XYZ_Course</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\XYZ_Course\XYZ_CourseGameModeBase.cpp">
+      <Filter>Source\XYZ_Course</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\XYZ_Course\XYZ_CourseGameModeBase.h">
+      <Filter>Source\XYZ_Course</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

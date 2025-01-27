@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-XYZ_Course.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Intermediate\Build\Win64\XYZ_CourseEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Intermediate\Build\Win64\UE4Editor\Development\XYZ_Course\XYZ_Course.cpp.obj"
+"D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Intermediate\Build\Win64\UE4Editor\Development\XYZ_Course\XYZ_CourseGameModeBase.cpp.obj"
+"D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Intermediate\Build\Win64\UE4Editor\Development\XYZ_Course\XYZ_Course.init.gen.cpp.obj"
+"D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Intermediate\Build\Win64\UE4Editor\Development\XYZ_Course\XYZ_CourseGameModeBase.gen.cpp.obj"
+"D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Intermediate\Build\Win64\UE4Editor\Development\XYZ_Course\Default.rc2.res"
+/OUT:"D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Intermediate\Build\Win64\UE4Editor\Development\XYZ_Course\UE4Editor-XYZ_Course.lib"
