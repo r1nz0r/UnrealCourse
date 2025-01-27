@@ -897,3 +897,278 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2025.01.27-13.19.44:877][  0]LogContentStreaming: Texture pool size now 1000 MB
 [2025.01.27-13.24.09:622][942]LogSlate: Window 'About Unreal Editor' being destroyed
 [2025.01.27-13.33.04:511][661]LogRenderer: Reallocating scene render targets to support 1616x1532 Format 10 NumSamples 1 (Frame:1936).
+[2025.01.27-13.48.37:618][570]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2025.01.27-13.48.37:626][570]LogContentBrowser: Creating deferred item: NewFolder
+[2025.01.27-13.48.40:237][884]LogContentBrowser: Attempting asset rename: NewFolder -> Gym
+[2025.01.27-13.48.40:240][884]LogContentBrowser: End creating deferred item NewFolder
+[2025.01.27-13.48.44:322][358]LogContentBrowser: Deferred new asset file creation: NewWorld
+[2025.01.27-13.48.44:329][358]LogContentBrowser: Creating deferred item: NewWorld
+[2025.01.27-13.48.47:074][688]LogContentBrowser: Attempting asset rename: NewWorld -> Gym_Default
+[2025.01.27-13.48.47:082][688]LogContentBrowser: End creating deferred item NewWorld
+[2025.01.27-13.48.48:799][890]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2025.01.27-13.48.49:880][890]LogSlate: Window 'Save Content' being destroyed
+[2025.01.27-13.48.49:898][890]LogSlate: Took 0.000168 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2025.01.27-13.48.49:916][890]LogUObjectHash: Compacting FUObjectHashTables data took   0.20ms
+[2025.01.27-13.48.49:922][890]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/Gym_Default381EFC674CED8C782D0D44A45F942EF4.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/Maps/Gym/Gym_Default.umap'
+[2025.01.27-13.48.49:923][890]LogFileHelpers: Saving map 'Gym_Default' took 0.011
+[2025.01.27-13.48.49:950][890]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Dynamic/Maps/Gym/Gym_Default.Gym_Default
+[2025.01.27-13.48.49:950][890]Cmd: MAP LOAD FILE="../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/Maps/Gym/Gym_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-13.48.49:950][890]LightingResults: New page: Lighting Build
+[2025.01.27-13.48.49:950][890]LoadErrors: New page: Loading map: Gym_Default.umap
+[2025.01.27-13.48.49:951][890]LogWorld: UWorld::CleanupWorld for Untitled_1, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-13.48.49:951][890]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-13.48.49:951][890]MapCheck: New page: Map Check
+[2025.01.27-13.48.49:952][890]LightingResults: New page: Lighting Build
+[2025.01.27-13.48.49:954][890]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-13.48.49:956][890]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2025.01.27-13.48.49:956][890]LogAudio: Display: Audio Device (ID: 1) registered with world 'Gym_Default'.
+[2025.01.27-13.48.49:959][890]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-13.48.49:959][890]LogAIModule: Creating AISystem for world Gym_Default
+[2025.01.27-13.48.49:963][890]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2025.01.27-13.48.49:964][890]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-13.48.49:965][890]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,147ms to complete.
+[2025.01.27-13.48.49:965][890]LogFileHelpers: Loading map 'Gym_Default' took 0.015
+[2025.01.27-13.48.49:976][890]AssetCheck: New page: Asset Save: Gym_Default
+[2025.01.27-13.48.49:977][890]LogContentValidation: Display: Validating World /Game/Dynamic/Maps/Gym/Gym_Default.Gym_Default
+[2025.01.27-14.11.30:706][194]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2025.01.27-14.11.30:706][194]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2025.01.27-14.11.36:166][803]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2025.01.27-14.11.36:177][803]LogContentBrowser: Creating deferred item: NewFolder
+[2025.01.27-14.11.37:529][965]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2025.01.27-14.11.37:529][965]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2025.01.27-14.11.44:742][651]LogContentBrowser: Attempting asset rename: NewFolder -> MaterialLibrary
+[2025.01.27-14.11.44:743][651]LogContentBrowser: End creating deferred item NewFolder
+[2025.01.27-14.13.26:906][729]LogSlate: Window 'Source Control Login' being destroyed
+[2025.01.27-14.13.40:542][927]LogAssetEditorSubsystem: Opening Asset editor for MaterialInstanceConstant /Game/Dynamic/MaterialLibrary/MI_BaseInterpMesh_WUV.MI_BaseInterpMesh_WUV
+[2025.01.27-14.13.40:553][927]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Engine/EditorMaterials/AssetViewer/EpicQuadPanorama_CC+EV1.EpicQuadPanorama_CC+EV1', its maximum texture size has been explicitly set to 512.
+[2025.01.27-14.13.40:665][927]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Engine/MapTemplates/Sky/SunsetAmbientCubemap.SunsetAmbientCubemap', its maximum texture size has been explicitly set to 512.
+[2025.01.27-14.13.50:966][864]LogSlate: Window 'Color Picker' being destroyed
+[2025.01.27-14.14.19:590][118]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2025.01.27-14.14.19:606][118]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2025.01.27-14.14.19:610][118]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/MI_BaseInterpMesh_WUV44EC35104F7168DBA448BB9D639BE42C.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/MaterialLibrary/MI_BaseInterpMesh_WUV.uasset'
+[2025.01.27-14.14.19:752][118]AssetCheck: New page: Asset Save: MI_BaseInterpMesh_WUV
+[2025.01.27-14.14.19:752][118]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Dynamic/MaterialLibrary/MI_BaseInterpMesh_WUV.MI_BaseInterpMesh_WUV
+[2025.01.27-14.14.23:892][352]LogSlate: Window 'MI_BaseInterpMesh_WUV' being destroyed
+[2025.01.27-14.14.23:899][352]LogSlate: Window 'MI_BaseInterpMesh_WUV' being destroyed
+[2025.01.27-14.14.23:902][352]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.14.23:902][352]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.14.56:531][106]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2025.01.27-14.14.56:544][106]LogContentBrowser: Creating deferred item: NewFolder
+[2025.01.27-14.14.57:613][235]LogContentBrowser: Attempting asset rename: NewFolder -> Grid
+[2025.01.27-14.14.57:613][235]LogContentBrowser: End creating deferred item NewFolder
+[2025.01.27-14.15.00:987][560]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/MI_BaseInterpMesh_WUV231A05694824E81DC4748ABA2AD33241.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/MaterialLibrary/Grid/MI_BaseInterpMesh_WUV.uasset'
+[2025.01.27-14.15.01:334][560]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2025.01.27-14.15.01:346][560]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2025.01.27-14.15.01:349][560]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2025.01.27-14.15.01:464][560]SourceControl: rm 'XYZ_Course/Content/Dynamic/MaterialLibrary/MI_BaseInterpMesh_WUV.uasset'
+[2025.01.27-14.15.01:502][560]AssetCheck: New page: Asset Save: MI_BaseInterpMesh_WUV
+[2025.01.27-14.15.01:502][560]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Dynamic/MaterialLibrary/Grid/MI_BaseInterpMesh_WUV.MI_BaseInterpMesh_WUV
+[2025.01.27-14.15.19:681][483]LogContentBrowser: Attempting asset rename: MI_BaseInterpMesh_WUV -> MI_Grid_Floor
+[2025.01.27-14.15.20:239][483]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/MI_Grid_FloorBB4DA08849E0D34DA3C50B8310C3CCD8.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/MaterialLibrary/Grid/MI_Grid_Floor.uasset'
+[2025.01.27-14.15.20:586][483]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2025.01.27-14.15.20:598][483]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2025.01.27-14.15.20:601][483]LogUObjectHash: Compacting FUObjectHashTables data took   0.30ms
+[2025.01.27-14.15.20:729][483]SourceControl: rm 'XYZ_Course/Content/Dynamic/MaterialLibrary/Grid/MI_BaseInterpMesh_WUV.uasset'
+[2025.01.27-14.15.20:748][483]AssetCheck: New page: Asset Save: MI_Grid_Floor
+[2025.01.27-14.15.20:748][483]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Dynamic/MaterialLibrary/Grid/MI_Grid_Floor.MI_Grid_Floor
+[2025.01.27-14.15.23:908][860]LogContentBrowser: Deferred new asset file creation: MI_Grid_Floor1
+[2025.01.27-14.15.23:914][860]LogContentBrowser: Creating deferred item: MI_Grid_Floor1
+[2025.01.27-14.15.26:310][148]LogContentBrowser: Attempting asset rename: MI_Grid_Floor1 -> MI_Grid_Floor1
+[2025.01.27-14.15.26:493][148]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/MI_Grid_Floor1ACCAE4284DA9438C07656BA07EC91A05.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/MaterialLibrary/Grid/MI_Grid_Floor1.uasset'
+[2025.01.27-14.15.26:785][148]LogContentBrowser: End creating deferred item MI_Grid_Floor1
+[2025.01.27-14.15.26:787][148]AssetCheck: New page: Asset Save: MI_Grid_Floor1
+[2025.01.27-14.15.26:787][148]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Dynamic/MaterialLibrary/Grid/MI_Grid_Floor1.MI_Grid_Floor1
+[2025.01.27-14.15.28:967][408]LogContentBrowser: Attempting asset rename: MI_Grid_Floor1 -> MI_Grid_Walls
+[2025.01.27-14.15.29:506][408]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/MI_Grid_Walls34B7DFB34D30098F9FCEE497A16CD055.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/MaterialLibrary/Grid/MI_Grid_Walls.uasset'
+[2025.01.27-14.15.29:857][408]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2025.01.27-14.15.29:867][408]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2025.01.27-14.15.29:871][408]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.01.27-14.15.29:995][408]SourceControl: rm 'XYZ_Course/Content/Dynamic/MaterialLibrary/Grid/MI_Grid_Floor1.uasset'
+[2025.01.27-14.15.30:014][408]AssetCheck: New page: Asset Save: MI_Grid_Walls
+[2025.01.27-14.15.30:014][408]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Dynamic/MaterialLibrary/Grid/MI_Grid_Walls.MI_Grid_Walls
+[2025.01.27-14.16.27:721][466]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2025.01.27-14.16.27:742][466]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Dynamic/Maps/Gym/Gym_Default.Gym_Default
+[2025.01.27-14.16.27:743][466]Cmd: MAP LOAD FILE="../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/Maps/Gym/Gym_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-14.16.27:743][466]LightingResults: New page: Lighting Build
+[2025.01.27-14.16.27:743][466]LoadErrors: New page: Loading map: Gym_Default.umap
+[2025.01.27-14.16.27:774][466]LogWorld: UWorld::CleanupWorld for Gym_Default, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.16.27:774][466]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.16.27:774][466]MapCheck: New page: Map Check
+[2025.01.27-14.16.27:774][466]LightingResults: New page: Lighting Build
+[2025.01.27-14.16.27:777][466]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.16.27:778][466]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2025.01.27-14.16.27:779][466]LogAudio: Display: Audio Device (ID: 1) registered with world 'Gym_Default'.
+[2025.01.27-14.16.27:779][466]LogAIModule: Creating AISystem for world Gym_Default
+[2025.01.27-14.16.27:780][466]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-14.16.27:784][466]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2025.01.27-14.16.27:785][466]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-14.16.27:785][466]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,129ms to complete.
+[2025.01.27-14.16.27:785][466]LogFileHelpers: Loading map 'Gym_Default' took 0.043
+[2025.01.27-14.16.39:153][508]LogObjectTools: Deleting 1 worlds: /Game/Dynamic/Maps/Gym/Gym_Default.Gym_Default
+[2025.01.27-14.16.39:153][508]LogObjectTools: Currently 2 active worlds: /Game/Dynamic/Maps/Gym/Gym_Default.Gym_Default, /Engine/Transient.World_0
+[2025.01.27-14.16.41:300][508]LogSlate: Window 'Unable to delete level' being destroyed
+[2025.01.27-14.16.41:315][508]Message dialog closed, result: Ok, title: Unable to delete level, text: Unable to delete level while it is open
+[2025.01.27-14.16.58:253][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Templates/Thumbnails/Default.uasset: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Templates/Thumbnails/Default.uasset' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:253][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/EngineSounds/ReverbSettings/Default.uasset: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/EngineSounds/ReverbSettings/Default.uasset' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:253][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/EditorLandscapeResources/DefaultAlphaTexture.uasset: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/EditorLandscapeResources/DefaultAlphaTexture.uasset' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:253][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/Animation: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/Animation' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:253][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/EngineMaterials: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/EngineMaterials' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:254][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/Sequencer: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/Sequencer' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:254][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/EngineResources: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/EngineResources' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:254][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/EditorMeshes/SkeletalMesh: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/EditorMeshes/SkeletalMesh' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:254][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:254][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/MapTemplates/MASTER_Sky_Material_DEFAULT_MAP.uasset: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/MapTemplates/MASTER_Sky_Material_DEFAULT_MAP.uasset' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:254][441]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/EngineSounds/Submixes: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/EngineSounds/Submixes' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.16.58:866][509]LogAssetEditorSubsystem: Opening Asset editor for Texture2D /Engine/Maps/Templates/Thumbnails/Default.Default
+[2025.01.27-14.16.58:915][509]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'TextureEditor' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2025.01.27-14.17.03:643][885]LogSlate: Window 'Default' being destroyed
+[2025.01.27-14.17.03:652][885]LogSlate: Window 'Default' being destroyed
+[2025.01.27-14.17.08:003][381]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Templates: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Templates' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.17.08:348][420]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2025.01.27-14.17.08:378][420]LogTexture: Display: Building textures: DeprecatedTextureEB9CBE3C423008B5E8E130901E171C89 (BGRA8, 128X128)
+[2025.01.27-14.17.08:382][420]LogAssetEditorSubsystem: Opening Asset editor for World /Engine/Maps/Templates/Template_Default.Template_Default
+[2025.01.27-14.17.08:382][420]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-14.17.08:382][420]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.08:382][420]LoadErrors: New page: Loading map: Template_Default.umap
+[2025.01.27-14.17.08:413][420]LogWorld: UWorld::CleanupWorld for Gym_Default, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.17.08:413][420]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.17.08:413][420]MapCheck: New page: Map Check
+[2025.01.27-14.17.08:413][420]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.08:417][420]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.17.08:418][420]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2025.01.27-14.17.08:419][420]LogAudio: Display: Audio Device (ID: 1) registered with world 'Template_Default'.
+[2025.01.27-14.17.08:420][420]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-14.17.08:420][420]LogAIModule: Creating AISystem for world Template_Default
+[2025.01.27-14.17.08:423][420]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2025.01.27-14.17.08:425][420]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-14.17.08:425][420]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,134ms to complete.
+[2025.01.27-14.17.08:425][420]LogFileHelpers: Loading map 'Template_Default' took 0.042
+[2025.01.27-14.17.12:205][837]LogSlate: Took 0.000174 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2025.01.27-14.17.21:052][837]LogSlate: Window 'Message' being destroyed
+[2025.01.27-14.17.21:059][837]Message dialog closed, result: Yes, title: Message, text: Gym_Default already exists. Do you want to replace it?
+[2025.01.27-14.17.21:059][837]LogSlate: Window 'Save Level As' being destroyed
+[2025.01.27-14.17.21:093][837]LogObjectTools: Deleting 1 worlds: /Game/Dynamic/Maps/Gym/Gym_Default.Gym_Default
+[2025.01.27-14.17.21:093][837]LogObjectTools: Currently 3 active worlds: /Engine/Maps/Templates/Template_Default.Template_Default, /Engine/Transient.World_0, /Engine/Transient.World_2
+[2025.01.27-14.17.21:096][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2025.01.27-14.17.21:099][837]LogWorld: UWorld::CleanupWorld for Gym_Default, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.17.21:099][837]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.17.21:176][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2025.01.27-14.17.21:179][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.36ms
+[2025.01.27-14.17.21:182][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.20ms
+[2025.01.27-14.17.21:191][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2025.01.27-14.17.21:198][837]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/Gym_DefaultD1D87C664419F37E19B11996EEF6404C.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/Maps/Gym/Gym_Default.umap'
+[2025.01.27-14.17.21:348][837]LogFileHelpers: Saving map 'Gym_Default' took 0.278
+[2025.01.27-14.17.21:348][837]Cmd: MAP LOAD FILE="../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/Maps/Gym/Gym_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-14.17.21:363][837]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.21:363][837]LoadErrors: New page: Loading map: Gym_Default.umap
+[2025.01.27-14.17.21:364][837]LogWorld: UWorld::CleanupWorld for Template_Default, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.17.21:364][837]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.17.21:364][837]MapCheck: New page: Map Check
+[2025.01.27-14.17.21:364][837]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.21:367][837]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.17.21:368][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2025.01.27-14.17.21:368][837]LogAudio: Display: Audio Device (ID: 1) registered with world 'Gym_Default'.
+[2025.01.27-14.17.21:370][837]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-14.17.21:370][837]LogAIModule: Creating AISystem for world Gym_Default
+[2025.01.27-14.17.21:374][837]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2025.01.27-14.17.21:385][837]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-14.17.21:385][837]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,159ms to complete.
+[2025.01.27-14.17.21:385][837]LogFileHelpers: Loading map 'Gym_Default' took 0.037
+[2025.01.27-14.17.21:389][837]AssetCheck: New page: Asset Save: Gym_Default
+[2025.01.27-14.17.21:389][837]LogContentValidation: Display: Validating World /Game/Dynamic/Maps/Gym/Gym_Default.Gym_Default
+[2025.01.27-14.17.21:503][845]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Templates/Template_Default.umap: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Templates/Template_Default.umap' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.17.22:499][958]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Entry.umap: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Entry.umap' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.17.22:499][958]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Templates/VR-Basic.umap: 'D:/Program Files/Epic Games/UE_4.27/Engine/Content/Maps/Templates/VR-Basic.umap' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.17.23:544][ 69]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2025.01.27-14.17.26:558][417]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2025.01.27-14.17.26:587][417]LogAssetEditorSubsystem: Opening Asset editor for World /Engine/Maps/Entry.Entry
+[2025.01.27-14.17.26:587][417]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Entry.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-14.17.26:587][417]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.26:587][417]LoadErrors: New page: Loading map: Entry.umap
+[2025.01.27-14.17.26:588][417]LogWorld: UWorld::CleanupWorld for Gym_Default, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.17.26:588][417]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.17.26:588][417]MapCheck: New page: Map Check
+[2025.01.27-14.17.26:588][417]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.26:591][417]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.17.26:591][417]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2025.01.27-14.17.26:591][417]LogAudio: Display: Audio Device (ID: 1) registered with world 'Entry'.
+[2025.01.27-14.17.26:592][417]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-14.17.26:592][417]LogAIModule: Creating AISystem for world Entry
+[2025.01.27-14.17.26:596][417]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2025.01.27-14.17.26:597][417]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-14.17.26:597][417]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,123ms to complete.
+[2025.01.27-14.17.26:597][417]LogFileHelpers: Loading map 'Entry' took 0.011
+[2025.01.27-14.17.28:681][661]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2025.01.27-14.17.28:705][661]LogTexture: Display: Building textures: DeprecatedTextureEB9CBE3C423008B5E8E130901E171C89 (BGRA8, 128X128)
+[2025.01.27-14.17.28:707][661]LogAssetEditorSubsystem: Opening Asset editor for World /Engine/Maps/Templates/Template_Default.Template_Default
+[2025.01.27-14.17.28:707][661]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-14.17.28:707][661]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.28:708][661]LoadErrors: New page: Loading map: Template_Default.umap
+[2025.01.27-14.17.28:708][661]LogWorld: UWorld::CleanupWorld for Entry, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.17.28:708][661]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.17.28:708][661]MapCheck: New page: Map Check
+[2025.01.27-14.17.28:708][661]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.28:711][661]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.17.28:712][661]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2025.01.27-14.17.28:712][661]LogAudio: Display: Audio Device (ID: 1) registered with world 'Template_Default'.
+[2025.01.27-14.17.28:713][661]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-14.17.28:714][661]LogAIModule: Creating AISystem for world Template_Default
+[2025.01.27-14.17.28:717][661]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2025.01.27-14.17.28:718][661]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-14.17.28:719][661]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,149ms to complete.
+[2025.01.27-14.17.28:719][661]LogFileHelpers: Loading map 'Template_Default' took 0.011
+[2025.01.27-14.17.29:226][718]LogUObjectHash: Compacting FUObjectHashTables data took   0.21ms
+[2025.01.27-14.17.29:590][718]LogAssetEditorSubsystem: Opening Asset editor for World /Engine/Maps/Templates/TimeOfDay_Default.TimeOfDay_Default
+[2025.01.27-14.17.29:590][718]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/TimeOfDay_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-14.17.29:590][718]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.29:590][718]LoadErrors: New page: Loading map: TimeOfDay_Default.umap
+[2025.01.27-14.17.29:590][718]LogWorld: UWorld::CleanupWorld for Template_Default, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.17.29:591][718]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.17.29:591][718]MapCheck: New page: Map Check
+[2025.01.27-14.17.29:591][718]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.29:594][718]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.17.29:595][718]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2025.01.27-14.17.29:595][718]LogAudio: Display: Audio Device (ID: 1) registered with world 'TimeOfDay_Default'.
+[2025.01.27-14.17.29:596][718]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-14.17.29:596][718]LogAIModule: Creating AISystem for world TimeOfDay_Default
+[2025.01.27-14.17.29:600][718]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2025.01.27-14.17.29:602][718]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-14.17.29:602][718]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,129ms to complete.
+[2025.01.27-14.17.29:602][718]LogFileHelpers: Loading map 'TimeOfDay_Default' took 0.013
+[2025.01.27-14.17.30:198][773]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.01.27-14.17.30:343][773]LogAssetEditorSubsystem: Opening Asset editor for World /Engine/Maps/Templates/VR-Basic.VR-Basic
+[2025.01.27-14.17.30:343][773]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/VR-Basic.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-14.17.30:343][773]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.30:343][773]LoadErrors: New page: Loading map: VR-Basic.umap
+[2025.01.27-14.17.30:384][773]LogWorld: UWorld::CleanupWorld for TimeOfDay_Default, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.17.30:385][773]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.17.30:385][773]MapCheck: New page: Map Check
+[2025.01.27-14.17.30:385][773]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.30:388][773]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.17.30:389][773]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2025.01.27-14.17.30:390][773]LogAudio: Display: Audio Device (ID: 1) registered with world 'VR-Basic'.
+[2025.01.27-14.17.30:391][773]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-14.17.30:391][773]LogAIModule: Creating AISystem for world VR-Basic
+[2025.01.27-14.17.30:395][773]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2025.01.27-14.17.30:396][773]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-14.17.30:396][773]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,136ms to complete.
+[2025.01.27-14.17.30:396][773]LogFileHelpers: Loading map 'VR-Basic' took 0.054
+[2025.01.27-14.17.32:359][999]LogSlate: Took 0.002326 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2025.01.27-14.17.36:295][376]LogUObjectHash: Compacting FUObjectHashTables data took   0.21ms
+[2025.01.27-14.17.36:318][376]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Dynamic/Maps/Gym/Gym_Default.Gym_Default
+[2025.01.27-14.17.36:318][376]Cmd: MAP LOAD FILE="../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/Maps/Gym/Gym_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2025.01.27-14.17.36:318][376]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.36:318][376]LoadErrors: New page: Loading map: Gym_Default.umap
+[2025.01.27-14.17.36:364][376]LogWorld: UWorld::CleanupWorld for VR-Basic, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.17.36:364][376]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.17.36:364][376]MapCheck: New page: Map Check
+[2025.01.27-14.17.36:364][376]LightingResults: New page: Lighting Build
+[2025.01.27-14.17.36:367][376]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.17.36:368][376]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2025.01.27-14.17.36:368][376]LogAudio: Display: Audio Device (ID: 1) registered with world 'Gym_Default'.
+[2025.01.27-14.17.36:370][376]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-14.17.36:370][376]LogAIModule: Creating AISystem for world Gym_Default
+[2025.01.27-14.17.36:373][376]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2025.01.27-14.17.36:374][376]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-14.17.36:374][376]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,139ms to complete.
+[2025.01.27-14.17.36:374][376]LogFileHelpers: Loading map 'Gym_Default' took 0.057
