@@ -7,7 +7,7 @@
 // Sets default values
 ABasePlatform::ABasePlatform()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	USceneComponent* DefaultPlatformRoot = CreateDefaultSubobject<USceneComponent>(TEXT("Platform Root"));
@@ -24,10 +24,9 @@ void ABasePlatform::BeginPlay()
 	StartLocation = PlatformMesh->GetRelativeLocation();
 
 	if (IsValid(TimelineCurve))
-	{
-		FOnTimelineFloatStatic PlatformMovementTimelineUpdate;
-		PlatformMovementTimelineUpdate.BindUObject(this, &ABasePlatform::PlatformTimelineUpdate);
-		PlatformTimeline.AddInterpFloat(TimelineCurve, PlatformMovementTimelineUpdate);
+	{		
+		PlatformTimeline.AddInterpFloat(TimelineCurve,FOnTimelineFloatStatic::CreateUObject(this, &ABasePlatform::UpdatePlatformTimeline));
+		PlatformTimeline.SetTimelineFinishedFunc(FOnTimelineEventStatic::CreateUObject(this, &ABasePlatform::OnTimelineFinished));
 	}
 
 	if (IsValid(PlatformInvocator))
@@ -43,18 +42,18 @@ void ABasePlatform::Tick(float DeltaTime)
 	PlatformTimeline.TickTimeline(DeltaTime);
 }
 
-void ABasePlatform::PlatformTimelineUpdate(float Alpha)
+void ABasePlatform::UpdatePlatformTimeline(float Alpha)
 {
 	const FVector PlatformTargetLocation = FMath::Lerp(StartLocation, EndLocation, Alpha);
 	PlatformMesh->SetRelativeLocation(PlatformTargetLocation);
 }
 
-bool ABasePlatform::IsPlatformTimelinePlaybackPositionAtEnd()
+bool ABasePlatform::IsPlatformTimelinePlaybackPositionAtEnd() const
 {
 	return PlatformTimeline.GetPlaybackPosition() == PlatformTimeline.GetTimelineLength();
 }
 
-void ABasePlatform::PlayPlatformOnDemandTimeline()
+void ABasePlatform::PlayPlatformTimeline()
 {
 	if (PlatformTimeline.IsPlaying())
 	{
@@ -73,5 +72,15 @@ void ABasePlatform::PlayPlatformOnDemandTimeline()
 
 void ABasePlatform::OnPlatformInvoked()
 {
-	PlayPlatformOnDemandTimeline();
+	PlayPlatformTimeline();
+}
+
+void ABasePlatform::OnTimelineFinished()
+{
+	if (PlatformBehavior == EPlatformBehavior::OnDemand)
+	{
+		return;
+	}
+	
+	PlayPlatformTimeline();
 }

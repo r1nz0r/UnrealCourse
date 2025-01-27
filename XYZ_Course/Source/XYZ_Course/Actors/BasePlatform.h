@@ -39,7 +39,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UCurveFloat* TimelineCurve;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	EPlatformBehavior PlatformBehavior = EPlatformBehavior::OnDemand;
 	
 	UPROPERTY(EditInstanceOnly,BlueprintReadOnly)
@@ -50,12 +50,15 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
-	void PlatformTimelineUpdate(float Alpha);
-	bool IsPlatformTimelinePlaybackPositionAtEnd();
-	void PlayPlatformOnDemandTimeline();
-
 	UFUNCTION(BlueprintCallable)
 	void OnPlatformInvoked();
+
+	UFUNCTION()
+	void OnTimelineFinished();
 	
+	void UpdatePlatformTimeline(float Alpha);
+	void PlayPlatformTimeline();	
+	bool IsPlatformTimelinePlaybackPositionAtEnd() const;
+
 	FTimeline PlatformTimeline;
 };
