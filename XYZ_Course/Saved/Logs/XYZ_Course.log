@@ -899,3 +899,65 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2025.01.27-14.41.43:915][  2]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Source/Editor/LandscapeEditor/Private/Classes/ActorFactoryLandscape.h: 'D:/Program Files/Epic Games/UE_4.27/Engine/Source/Editor/LandscapeEditor/Private/Classes/ActorFactoryLandscape.h' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
 [2025.01.27-14.41.43:915][  2]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Source/Editor/UnrealEd/Private/Factories/ActorFactoryLevelSequence.h: 'D:/Program Files/Epic Games/UE_4.27/Engine/Source/Editor/UnrealEd/Private/Factories/ActorFactoryLevelSequence.h' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
 [2025.01.27-14.41.43:915][  2]SourceControl: fatal: D:/Program Files/Epic Games/UE_4.27/Engine/Source/Editor/FoliageEdit/Private/ActorFactoryProceduralFoliage.h: 'D:/Program Files/Epic Games/UE_4.27/Engine/Source/Editor/FoliageEdit/Private/ActorFactoryProceduralFoliage.h' is outside repository at 'D:/UE5/Projects/Learn/XYZ_Course'
+[2025.01.27-14.42.12:799][ 38]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2025.01.27-14.42.12:813][ 38]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2025.01.27-14.42.20:533][912]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2025.01.27-14.42.20:563][912]LogBlueprint: Warning: [AssetLog] D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Content\ThirdPersonBP\Core\Characters\BP_ThirdPersonCharacter.uasset: [Compiler] InputAction Event references unknown Action 'ResetVR' for  InputAction ResetVR
+[2025.01.27-14.42.20:563][912]LogBlueprint: Warning: [AssetLog] D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Content\ThirdPersonBP\Core\Characters\BP_ThirdPersonCharacter.uasset: [Compiler] Input Axis Event references unknown Axis 'LookUpRate' for  InputAxis LookUpRate
+[2025.01.27-14.42.20:564][912]LogBlueprint: Warning: [AssetLog] D:\UE5\Projects\Learn\XYZ_Course\XYZ_Course\Content\ThirdPersonBP\Core\Characters\BP_ThirdPersonCharacter.uasset: [Compiler] Input Axis Event references unknown Axis 'TurnRate' for  InputAxis TurnRate
+[2025.01.27-14.42.21:801][ 36]LogTemp: Repeating last play command: Selected Viewport
+[2025.01.27-14.42.21:805][ 36]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.01.27-14.42.21:805][ 36]PIE: New page: PIE session: Untitled_1 (27 янв. 2025 г., 20:42:21)
+[2025.01.27-14.42.21:806][ 36]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2025.01.27-14.42.21:806][ 36]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2025.01.27-14.42.21:806][ 36]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2025.01.27-14.42.21:808][ 36]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001872s)
+[2025.01.27-14.42.21:809][ 36]LogAIModule: Creating AISystem for world Untitled_1
+[2025.01.27-14.42.21:809][ 36]LogPlayLevel: PIE: World Init took: (0.000693s)
+[2025.01.27-14.42.21:809][ 36]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.002660s)
+[2025.01.27-14.42.21:818][ 36]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2025.01.27-14.42.21:819][ 36]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2025.01.27-14.42.21:819][ 36]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.01.27-14.42.21:819][ 36]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.01.27-14.42.21:819][ 36]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.01.27-14.42.21:819][ 36]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.01.27-14.42.21:819][ 36]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2025.01.27-14.42.21:819][ 36]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.01.27-14.42.21:819][ 36]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2025.01.27-14.42.21:819][ 36]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.01.27-14.42.21:819][ 36]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.01.27-14.42.21:819][ 36]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.01.27-14.42.21:819][ 36]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.01.27-14.42.21:819][ 36]LogAudioMixer: Display: Initializing audio mixer.
+[2025.01.27-14.42.21:823][ 36]LogAudioMixer: Display: 0: FrontLeft
+[2025.01.27-14.42.21:823][ 36]LogAudioMixer: Display: 1: FrontRight
+[2025.01.27-14.42.21:830][ 36]LogAudioMixer: Display: Using Audio Device ASUS PG329 (NVIDIA High Definition Audio)
+[2025.01.27-14.42.21:830][ 36]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.01.27-14.42.21:830][ 36]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.01.27-14.42.21:830][ 36]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.01.27-14.42.21:831][ 36]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2025.01.27-14.42.21:831][ 36]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2025.01.27-14.42.21:831][ 36]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2025.01.27-14.42.21:832][ 36]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2025.01.27-14.42.21:832][ 36]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2025.01.27-14.42.21:832][ 36]LogInit: FAudioDevice initialized.
+[2025.01.27-14.42.21:832][ 36]LogAudio: Display: Audio Device (ID: 2) registered with world 'Untitled_1'.
+[2025.01.27-14.42.21:841][ 36]LogLoad: Game class is 'BP_ThirdPersonGameMode_C'
+[2025.01.27-14.42.21:842][ 36]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2025.01.27-17.42.21
+[2025.01.27-14.42.21:842][ 36]LogWorld: Bringing up level for play took: 0.000354
+[2025.01.27-14.42.21:842][ 36]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2025.01.27-14.42.21:848][ 36]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0002 seconds. Added 20 classes and 0 folders.
+[2025.01.27-14.42.21:850][ 36]PIE: Server logged in
+[2025.01.27-14.42.21:851][ 36]PIE: Play in editor total start time 0,047 seconds.
+[2025.01.27-14.42.25:967][522]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.27-14.42.25:967][522]LogWorld: BeginTearingDown for /Temp/UEDPIE_0_Untitled_1
+[2025.01.27-14.42.25:967][522]LogWorld: UWorld::CleanupWorld for Untitled_1, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-14.42.25:967][522]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.42.25:973][522]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.01.27-14.42.25:974][522]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-14.42.25:978][522]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-14.42.25:978][522]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2025.01.27-14.42.25:978][522]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2025.01.27-14.42.25:980][522]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.27-14.42.25:981][522]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2025.01.27-14.42.26:036][526]LogPlayLevel: Display: Destroying online subsystem :Context_1
