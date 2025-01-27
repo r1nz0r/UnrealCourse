@@ -1,12 +1,51 @@
-#ignores all files whith VS and UE generate
-.vs/
-XYZ_Course\Binaries\
-XYZ_Course\DerivedDataCache\
-XYZ_Course\Intermediate\
-XYZ_Course\Saved\
-.vsconfig
+# Игнорировать папки билдов и временные файлы
+/Intermediate/
+/Binaries/
+/Saved/
+/DerivedDataCache/
+/Build/
+
+# Конфигурационные файлы, создаваемые редактором
+*.suo
+*.user
+*.userosscache
+*.usersettings
 *.sln
-#don't ignore some folders
-!Diagrams/
-!Docs/
-!Raw/
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.xcworkspace
+
+# Кэшированные и промежуточные файлы
+*.log
+*.obj
+*.bin
+*.pdb
+*.exe
+*.lib
+*.dll
+*.app
+*.dSYM
+*.apk
+*.DS_Store
+*.ipa
+*.so
+
+# Исключить файлы данных редактора Unreal Engine
+*.uasset
+*.umap
+
+# Исключить специфические конфигурационные файлы UE
+Config/DefaultEditor.ini
+Config/DefaultEditorUserSettings.ini
+
+# Указания для контента проекта
+!Content/**/*.uasset
+!Content/**/*.umap
+
+# Для конкретного проекта XYZ_Course
+/XYZ_Course/Intermediate/
+/XYZ_Course/Binaries/
+/XYZ_Course/Saved/
+/XYZ_Course/DerivedDataCache/
+/XYZ_Course/Build/
