@@ -3,8 +3,16 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/TimelineComponent.h"
 #include "GameFramework/Actor.h"
 #include "BasePlatform.generated.h"
+
+UENUM()
+enum class EPlatformBehavior : uint8
+{
+	OnDemand = 0,
+	Loop
+};
 
 UCLASS()
 class XYZ_COURSE_API ABasePlatform : public AActor
@@ -19,8 +27,27 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UStaticMeshComponent* PlatformMesh;
+
+	UPROPERTY(EditInstanceOnly, BlueprintReadOnly, meta = (MakeEditWidget))
+	FVector EndLocation;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Transient)
+	FVector StartLocation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UCurveFloat* TimelineCurve;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	EPlatformBehavior PlatformBehavior = EPlatformBehavior::OnDemand;
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+private:
+	void PlatformTimelineUpdate(float Alpha);
+	
+	FTimeline PlatformTimeline;
 };
