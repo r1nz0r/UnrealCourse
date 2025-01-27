@@ -1356,3 +1356,39 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2025.01.27-14.37.52:694][362]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/MI_Grid_WallsFBC908F2400CC03968CD6CB976975579.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/Dynamic/MaterialLibrary/Grid/MI_Grid_Walls.uasset'
 [2025.01.27-14.37.52:741][362]AssetCheck: New page: Asset Save: MI_Grid_Walls
 [2025.01.27-14.37.52:741][362]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/Dynamic/MaterialLibrary/Grid/MI_Grid_Walls.MI_Grid_Walls
+[2025.01.27-14.39.05:621][734]LogContentBrowser: Attempting asset rename: ThirdPersonCharacter -> BP_ThirdPersonCharacter
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_C' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.SKEL_BP_ThirdPersonCharacter_C' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.SKEL_BP_ThirdPersonCharacter_C:InpAxisEvt_LookUp_K2Node_InputAxisEvent_40' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.SKEL_BP_ThirdPersonCharacter_C:InpAxisEvt_Turn_K2Node_InputAxisEvent_47' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.SKEL_BP_ThirdPersonCharacter_C:InpAxisEvt_MoveForward_K2Node_InputAxisEvent_79' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.SKEL_BP_ThirdPersonCharacter_C:InpAxisEvt_MoveRight_K2Node_InputAxisEvent_90' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.SKEL_BP_ThirdPersonCharacter_C:InpAxisEvt_TurnRate_K2Node_InputAxisEvent_38' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.SKEL_BP_ThirdPersonCharacter_C:InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_53' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:109][734]LogMetaData: Removing '/Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.SKEL_BP_ThirdPersonCharacter_C:UserConstructionScript' ref from Metadata '/Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.PackageMetaData'
+[2025.01.27-14.39.06:174][734]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/BP_ThirdPersonCharacter374D9A6944FE0A38C8BBB9B42501384D.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.uasset'
+[2025.01.27-14.39.06:307][734]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/ThirdPersonCharacter1D27274145E9124369EDE68C20CC5228.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.uasset'
+[2025.01.27-14.39.06:481][734]AssetCheck: New page: Asset Save: multiple assets
+[2025.01.27-14.39.06:481][734]LogContentValidation: Display: Validating Blueprint /Game/ThirdPersonBP/Core/Characters/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2025.01.27-14.39.06:481][734]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.ThirdPersonCharacter
+[2025.01.27-14.39.06:481][734]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.Default__ThirdPersonCharacter_C
+[2025.01.27-14.39.06:481][734]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.ThirdPersonCharacter_C
+[2025.01.27-14.39.10:510][204]LogContentBrowser: Attempting asset rename: ThirdPersonGameMode -> BP_ThirdPersonGameMode
+[2025.01.27-14.39.11:001][204]LogMetaData: Removing '/Game/ThirdPersonBP/Core/GameModes/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C' ref from Metadata '/Game/ThirdPersonBP/Core/GameModes/ThirdPersonGameMode.PackageMetaData'
+[2025.01.27-14.39.11:001][204]LogMetaData: Removing '/Game/ThirdPersonBP/Core/GameModes/BP_ThirdPersonGameMode.SKEL_BP_ThirdPersonGameMode_C' ref from Metadata '/Game/ThirdPersonBP/Core/GameModes/ThirdPersonGameMode.PackageMetaData'
+[2025.01.27-14.39.11:001][204]LogMetaData: Removing '/Game/ThirdPersonBP/Core/GameModes/BP_ThirdPersonGameMode.SKEL_BP_ThirdPersonGameMode_C:UserConstructionScript' ref from Metadata '/Game/ThirdPersonBP/Core/GameModes/ThirdPersonGameMode.PackageMetaData'
+[2025.01.27-14.39.11:029][204]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/BP_ThirdPersonGameModeD4445B384D3F79ED34598CB50B1C9C72.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/ThirdPersonBP/Core/GameModes/BP_ThirdPersonGameMode.uasset'
+[2025.01.27-14.39.11:158][204]LogSavePackage: Moving '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Saved/ThirdPersonGameModeB95390C742BA5249AFB299BD74A508AE.tmp' to '../../../../../../UE5/Projects/Learn/XYZ_Course/XYZ_Course/Content/ThirdPersonBP/Core/GameModes/ThirdPersonGameMode.uasset'
+[2025.01.27-14.39.11:352][204]AssetCheck: New page: Asset Save: multiple assets
+[2025.01.27-14.39.11:352][204]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPersonBP/Core/GameModes/ThirdPersonGameMode.ThirdPersonGameMode
+[2025.01.27-14.39.11:352][204]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPersonBP/Core/GameModes/ThirdPersonGameMode.Default__ThirdPersonGameMode_C
+[2025.01.27-14.39.11:352][204]LogContentValidation: Display: Validating ObjectRedirector /Game/ThirdPersonBP/Core/GameModes/ThirdPersonGameMode.ThirdPersonGameMode_C
+[2025.01.27-14.39.11:352][204]LogContentValidation: Display: Validating Blueprint /Game/ThirdPersonBP/Core/GameModes/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode
+[2025.01.27-14.39.23:947][  4]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2025.01.27-14.39.24:194][  4]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2025.01.27-14.39.24:197][  4]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2025.01.27-14.39.24:230][  4]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2025.01.27-14.39.24:233][  4]LogUObjectHash: Compacting FUObjectHashTables data took   0.21ms
+[2025.01.27-14.39.24:466][  4]SourceControl: Error: Updated 2 paths from the index
+[2025.01.27-14.39.24:651][  4]SourceControl: rm 'XYZ_Course/Content/ThirdPersonBP/Core/Characters/ThirdPersonCharacter.uasset'
+[2025.01.27-14.39.24:651][  4]SourceControl: rm 'XYZ_Course/Content/ThirdPersonBP/Core/GameModes/ThirdPersonGameMode.uasset'
