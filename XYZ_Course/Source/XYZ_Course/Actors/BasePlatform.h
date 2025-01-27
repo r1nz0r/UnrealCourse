@@ -42,12 +42,20 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	EPlatformBehavior PlatformBehavior = EPlatformBehavior::OnDemand;
 	
+	UPROPERTY(EditInstanceOnly,BlueprintReadOnly)
+	class APlatformInvocator* PlatformInvocator;
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 private:
 	void PlatformTimelineUpdate(float Alpha);
+	bool IsPlatformTimelinePlaybackPositionAtEnd();
+	void PlayPlatformOnDemandTimeline();
+
+	UFUNCTION(BlueprintCallable)
+	void OnPlatformInvoked();
 	
 	FTimeline PlatformTimeline;
 };

@@ -2,6 +2,7 @@
 
 
 #include "BasePlatform.h"
+#include "PlatformInvocator.h"
 
 // Sets default values
 ABasePlatform::ABasePlatform()
@@ -28,6 +29,11 @@ void ABasePlatform::BeginPlay()
 		PlatformMovementTimelineUpdate.BindUObject(this, &ABasePlatform::PlatformTimelineUpdate);
 		PlatformTimeline.AddInterpFloat(TimelineCurve, PlatformMovementTimelineUpdate);
 	}
+
+	if (IsValid(PlatformInvocator))
+	{
+		PlatformInvocator->OnPlatformInvocatorActivated.AddDynamic(this, &ABasePlatform::OnPlatformInvoked);
+	}
 }
 
 // Called every frame
@@ -41,10 +47,31 @@ void ABasePlatform::PlatformTimelineUpdate(float Alpha)
 {
 	const FVector PlatformTargetLocation = FMath::Lerp(StartLocation, EndLocation, Alpha);
 	PlatformMesh->SetRelativeLocation(PlatformTargetLocation);
+}
 
-	if (!PlatformTimeline.IsPlaying() && PlatformBehavior == EPlatformBehavior::Loop)
+bool ABasePlatform::IsPlatformTimelinePlaybackPositionAtEnd()
+{
+	return PlatformTimeline.GetPlaybackPosition() == PlatformTimeline.GetTimelineLength();
+}
+
+void ABasePlatform::PlayPlatformOnDemandTimeline()
+{
+	if (PlatformTimeline.IsPlaying())
+	{
+		return;
+	}
+	
+	if (IsPlatformTimelinePlaybackPositionAtEnd())
 	{
 		PlatformTimeline.Reverse();
 	}
+	else
+	{
+		PlatformTimeline.Play();
+	}
 }
 
+void ABasePlatform::OnPlatformInvoked()
+{
+	PlayPlatformOnDemandTimeline();
+}
