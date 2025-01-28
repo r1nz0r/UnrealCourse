@@ -44,6 +44,9 @@ protected:
 	
 	UPROPERTY(EditInstanceOnly,BlueprintReadOnly)
 	class APlatformInvocator* PlatformInvocator;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (ClampMin="0"))
+	float ReturnDelay = 2.0f;
 	
 public:	
 	// Called every frame
@@ -52,14 +55,16 @@ public:
 private:
 	UFUNCTION(BlueprintCallable)
 	void OnPlatformInvoked();
-	void HandlePlatformBehavior();
+	void SetPlatformReturnTimer();
 
 	UFUNCTION()
 	void OnTimelineFinished();
 	
-	void UpdatePlatformTimeline(float Alpha);
+	void HandlePlatformBehavior();
 	void PlayPlatformTimeline();	
+	void UpdatePlatformTimeline(float Alpha);
 	bool IsPlatformTimelinePlaybackPositionAtEnd() const;
 
 	FTimeline PlatformTimeline;
+	FTimerHandle PlatformReturnTimerHandler;
 };

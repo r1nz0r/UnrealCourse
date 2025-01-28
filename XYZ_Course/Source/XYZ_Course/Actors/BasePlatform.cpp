@@ -24,9 +24,12 @@ void ABasePlatform::BeginPlay()
 	StartLocation = PlatformMesh->GetRelativeLocation();
 
 	if (IsValid(TimelineCurve))
-	{		
-		PlatformTimeline.AddInterpFloat(TimelineCurve,FOnTimelineFloatStatic::CreateUObject(this, &ABasePlatform::UpdatePlatformTimeline));
-		PlatformTimeline.SetTimelineFinishedFunc(FOnTimelineEventStatic::CreateUObject(this, &ABasePlatform::OnTimelineFinished));
+	{
+		PlatformTimeline.AddInterpFloat(TimelineCurve,
+		                                FOnTimelineFloatStatic::CreateUObject(
+			                                this, &ABasePlatform::UpdatePlatformTimeline));
+		PlatformTimeline.SetTimelineFinishedFunc(
+			FOnTimelineEventStatic::CreateUObject(this, &ABasePlatform::OnTimelineFinished));
 	}
 
 	if (IsValid(PlatformInvocator))
@@ -50,7 +53,7 @@ void ABasePlatform::UpdatePlatformTimeline(float Alpha)
 
 bool ABasePlatform::IsPlatformTimelinePlaybackPositionAtEnd() const
 {
-	return PlatformTimeline.GetPlaybackPosition() == PlatformTimeline.GetTimelineLength();
+	return FMath::IsNearlyEqual(PlatformTimeline.GetPlaybackPosition(), PlatformTimeline.GetTimelineLength());
 }
 
 void ABasePlatform::PlayPlatformTimeline()
@@ -59,7 +62,7 @@ void ABasePlatform::PlayPlatformTimeline()
 	{
 		return;
 	}
-	
+
 	if (IsPlatformTimelinePlaybackPositionAtEnd())
 	{
 		PlatformTimeline.Reverse();
@@ -73,17 +76,39 @@ void ABasePlatform::PlayPlatformTimeline()
 void ABasePlatform::OnPlatformInvoked()
 {
 	PlayPlatformTimeline();
+	GetWorld()->GetTimerManager().ClearTimer(PlatformReturnTimerHandler);
+}
+
+void ABasePlatform::SetPlatformReturnTimer()
+{	
+	GetWorld()->GetTimerManager().SetTimer(PlatformReturnTimerHandler, this, &ABasePlatform::PlayPlatformTimeline,
+	                                       ReturnDelay, false);
 }
 
 void ABasePlatform::HandlePlatformBehavior()
 {
 	if (PlatformBehavior == EPlatformBehavior::Loop)
 	{
-		PlayPlatformTimeline();
+		if (IsPlatformTimelinePlaybackPositionAtEnd() && ReturnDelay > 0.f)
+		{
+			SetPlatformReturnTimer();
+		}
+		else
+		{
+			PlayPlatformTimeline();
+		}
+	}
+	else if (PlatformBehavior == EPlatformBehavior::OnDemand)
+	{
+		if (FMath::IsNearlyZero(PlatformTimeline.GetPlaybackPosition()))
+		{
+			SetPlatformReturnTimer();
+		}
 	}
 }
 
 void ABasePlatform::OnTimelineFinished()
 {
+	GetWorld()->GetTimerManager().ClearTimer(PlatformReturnTimerHandler);
 	HandlePlatformBehavior();
 }
