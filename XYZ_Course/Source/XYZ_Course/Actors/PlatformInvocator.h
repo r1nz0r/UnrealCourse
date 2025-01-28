@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "PlatformInvocator.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnPlatformInvocatorActivated);
+DECLARE_MULTICAST_DELEGATE(FOnPlatformInvocatorActivated);
 
 UCLASS()
 class XYZ_COURSE_API APlatformInvocator : public AActor
@@ -26,6 +26,5 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	
-	UPROPERTY(BlueprintAssignable)
 	FOnPlatformInvocatorActivated OnPlatformInvocatorActivated;
 };
