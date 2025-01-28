@@ -61,7 +61,8 @@ private:
 	void OnTimelineFinished();
 	
 	void HandlePlatformBehavior();
-	void PlayPlatformTimeline();	
+	void PlayPlatformTimeline();
+	void ClearPlatformReturnTimer();
 	void UpdatePlatformTimeline(float Alpha);
 	bool IsPlatformTimelinePlaybackPositionAtEnd() const;
 

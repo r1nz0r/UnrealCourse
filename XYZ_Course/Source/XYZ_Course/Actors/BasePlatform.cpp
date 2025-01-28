@@ -73,10 +73,15 @@ void ABasePlatform::PlayPlatformTimeline()
 	}
 }
 
+void ABasePlatform::ClearPlatformReturnTimer()
+{
+	GetWorld()->GetTimerManager().ClearTimer(PlatformReturnTimerHandler);
+}
+
 void ABasePlatform::OnPlatformInvoked()
 {
+	ClearPlatformReturnTimer();
 	PlayPlatformTimeline();
-	GetWorld()->GetTimerManager().ClearTimer(PlatformReturnTimerHandler);
 }
 
 void ABasePlatform::SetPlatformReturnTimer()
