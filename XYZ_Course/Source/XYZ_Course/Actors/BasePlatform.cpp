@@ -31,7 +31,7 @@ void ABasePlatform::BeginPlay()
 
 	if (IsValid(PlatformInvocator))
 	{
-		PlatformInvocator->OnPlatformInvocatorActivated.AddDynamic(this, &ABasePlatform::OnPlatformInvoked);
+		PlatformInvocator->OnPlatformInvocatorActivated.AddUObject(this, &ABasePlatform::OnPlatformInvoked);
 	}
 }
 
@@ -75,12 +75,15 @@ void ABasePlatform::OnPlatformInvoked()
 	PlayPlatformTimeline();
 }
 
+void ABasePlatform::HandlePlatformBehavior()
+{
+	if (PlatformBehavior == EPlatformBehavior::Loop)
+	{
+		PlayPlatformTimeline();
+	}
+}
+
 void ABasePlatform::OnTimelineFinished()
 {
-	if (PlatformBehavior == EPlatformBehavior::OnDemand)
-	{
-		return;
-	}
-	
-	PlayPlatformTimeline();
+	HandlePlatformBehavior();
 }

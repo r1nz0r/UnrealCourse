@@ -52,6 +52,7 @@ public:
 private:
 	UFUNCTION(BlueprintCallable)
 	void OnPlatformInvoked();
+	void HandlePlatformBehavior();
 
 	UFUNCTION()
 	void OnTimelineFinished();
