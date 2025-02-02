@@ -4,3 +4,4 @@
 #include "Modules/ModuleManager.h"
 
 IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, XYZ_Course, "XYZ_Course" );
+DEFINE_LOG_CATEGORY(LogCameras);

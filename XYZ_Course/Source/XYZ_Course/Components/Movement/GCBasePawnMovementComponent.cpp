@@ -21,25 +21,28 @@ void UGCBasePawnMovementComponent::TickComponent(float DeltaTime, ELevelTick Tic
 	{
 		FHitResult HitResult;
 		FVector StartPoint = UpdatedComponent->GetComponentLocation();
-		float LineTraceLength = 50.f + GetGravityZ() * DeltaTime;
+		float TraceDepth = 10.f;
+		float SphereRadius = UpdatedComponent->Bounds.SphereRadius / 2;
+		float LineTraceLength = SphereRadius + TraceDepth;
 		FVector EndPoint = StartPoint - LineTraceLength * FVector::UpVector;
 		FCollisionQueryParams CollisionParams;
 		CollisionParams.AddIgnoredActor(GetOwner());
 
 		bool bWasFalling = bIsFalling;
-		bIsFalling = !GetWorld()->LineTraceSingleByChannel(HitResult, StartPoint, EndPoint, ECC_Visibility,
-		                                                   CollisionParams);
+		FCollisionShape Sphere = FCollisionShape::MakeSphere(SphereRadius);
+		bIsFalling = !GetWorld()->SweepSingleByChannel(HitResult, StartPoint, EndPoint, FQuat::Identity,
+		                                               ECC_Visibility, Sphere, CollisionParams);
 		if (bIsFalling)
 		{
 			VerticalVelocity += GetGravityZ() * FVector::UpVector * DeltaTime;
-			Velocity += VerticalVelocity;
 		}
-		else if (bWasFalling)
+		else if (bWasFalling && VerticalVelocity.Z < 0.f)
 		{
 			VerticalVelocity = FVector::ZeroVector;
 		}
 	}
 
+	Velocity += VerticalVelocity;
 	const FVector DeltaMovement = Velocity * DeltaTime;
 
 	if (!DeltaMovement.IsNearlyZero(1e-6f))

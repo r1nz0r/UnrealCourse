@@ -4,6 +4,7 @@
 #include "GameCodeBasePawn.h"
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "XYZ_Course/XYZ_Course.h"
 #include "XYZ_Course/Components/Movement/GCBasePawnMovementComponent.h"
 
 AGameCodeBasePawn::AGameCodeBasePawn()
@@ -69,4 +70,5 @@ void AGameCodeBasePawn::BeginPlay()
 void AGameCodeBasePawn::OnBlendComplete()
 {
 	CurrentViewActor = GetController()->GetViewTarget();
+	UE_LOG(LogCameras, Log, TEXT("AGameCodeBasePawn::OnBlendComplete() Current view actor: %s"), *CurrentViewActor->GetName())
 }
