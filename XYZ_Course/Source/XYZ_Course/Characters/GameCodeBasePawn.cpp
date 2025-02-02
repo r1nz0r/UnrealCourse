@@ -3,6 +3,7 @@
 
 #include "GameCodeBasePawn.h"
 #include "Components/SphereComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "XYZ_Course/Components/Movement/GCBasePawnMovementComponent.h"
 
 AGameCodeBasePawn::AGameCodeBasePawn()
@@ -31,7 +32,7 @@ void AGameCodeBasePawn::MoveForward(float Value)
 {
 	if (Value != 0.f)
 	{
-		AddMovementInput(GetActorForwardVector(), Value);
+		AddMovementInput(CurrentViewActor->GetActorForwardVector(), Value);
 	}
 }
 
@@ -39,7 +40,7 @@ void AGameCodeBasePawn::MoveRight(float Value)
 {	
 	if (Value != 0.f)
 	{
-		AddMovementInput(GetActorRightVector(), Value);
+		AddMovementInput(CurrentViewActor->GetActorRightVector(), Value);
 	}
 }
 
@@ -49,4 +50,23 @@ void AGameCodeBasePawn::Jump()
 		TEXT("AGameCodeBasePawn::Jump() Jump can work only with UGCBasePawnMovementComponent"));
 	UGCBasePawnMovementComponent* BaseMovement = StaticCast<UGCBasePawnMovementComponent*>(MovementComponent);
 	BaseMovement->JumpStart();
+}
+
+void AGameCodeBasePawn::BeginPlay()
+{
+	Super::BeginPlay();
+	const APlayerCameraManager* CameraManager = UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0);
+
+	if (!IsValid(CameraManager))
+	{
+		return;
+	}
+
+	CurrentViewActor = CameraManager->GetViewTarget();
+	CameraManager->OnBlendComplete().AddUObject(this, &AGameCodeBasePawn::OnBlendComplete);
+}
+
+void AGameCodeBasePawn::OnBlendComplete()
+{
+	CurrentViewActor = GetController()->GetViewTarget();
 }
